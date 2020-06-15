@@ -28,12 +28,12 @@ void rotate(vector<int>&nums, int key){
 
    if(key < 0) return;
 
-         reverse(nums.begin(),nums.begin()+key);
+         reverse(nums.begin(),nums.begin()+key);  //reversing from beginning to beginning+key
          cout<<"\nRotated array 1st time  is :-\n";
          for(int i =0; i< length; i++)
          cout<<nums[i]<<" ";              //Array after rotating first half;
 
-        reverse(nums.begin()+key,nums.end());
+        reverse(nums.begin()+key,nums.end());  // reversing from beginning+key to end;
         cout<<"\nRotated array 2nd time  is :-\n";
         for(int i =0; i< length; i++)
         cout<<nums[i]<<" ";               //Array after rotating second half;
